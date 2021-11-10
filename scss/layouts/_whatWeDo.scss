@@ -16,10 +16,9 @@
 
 .whatWeDo-item {
     position: relative;
-}
-
-.whatWeDo-item:not(:last-child) {
-    margin-right: 30px;
+    &:not(:last-child){
+        margin-right: 30px; 
+    }
 }
 
 .whatWeDo-text {

@@ -1,0 +1,129 @@
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    width: 100%;
+
+    padding: 24px 0;
+    border-bottom: 1px solid #ECECEC;
+    background-color: #FFFFFF;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-logo {
+    margin-right: 93px;
+    font-family: Raleway;
+    font-weight: var(--primary-fontWeight);
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    color: var(--logo-primary-color);
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-logo span {
+    color: var(--logo-header-color)
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav .nav-link.current {
+    color: var(--accent-color);
+}
+
+.nav-link {
+    position: relative;
+    padding: 32px 0;
+    color: var(--primary-text-color);
+    font-weight: var(--second-fontWeight);
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    opacity: 0;
+}
+
+.nav-link.current::after {
+    opacity: 1;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--accent-color);
+}
+
+.headerContact-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+.header-contacts {
+    display: flex;
+    align-items: center;
+}
+
+.header-contact:not(:last-child) {
+    margin-right: 50px;
+}
+
+.headerContact-link {
+    font-weight: var(--second-fontWeight);
+    color: var(--second-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.headerContact-link:focus,
+.headerContact-link:hover {
+    color: var(--accent-color);
+}
+
+.icon-contact {
+    fill: var(--second-text-color);
+    margin-right: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-mail {
+    width: 16px;
+    height: 12px;
+}
+
+.icon-phone {
+    width: 10px;
+    height: 16px;
+}
+
+.headerContact-link:focus .icon-contact,
+.headerContact-link:hover .icon-contact {
+    fill: var(--accent-color);
+}

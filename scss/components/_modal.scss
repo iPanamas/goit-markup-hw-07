@@ -14,9 +14,7 @@
 }
 
 .modal-close {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex();
 
     width: 30px;
     height: 30px;

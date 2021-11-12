@@ -12,12 +12,13 @@
 
 .skills-title {
     margin-bottom: 10px;
-
+    
+    font-size: 14px;    
     font-weight: var(--primary-fontWeight);
-    font-size: 14px;
-    line-height: 1.1;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
     color: var(--primary-text-color);
 }
 
@@ -32,9 +33,7 @@
 }
 
 .skills-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex();
 
     width: 270px;
     height: 120px;

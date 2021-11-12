@@ -87,9 +87,9 @@ img {
 }
 
 .social-icon {
-  fill: var(--icon-color);
   width: 20px;
   height: 20px;
+  fill: var(--icon-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -269,8 +269,8 @@ img {
   margin-left: auto;
   width: 200px;
   height: 50px;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--third-text-color);
@@ -308,8 +308,8 @@ img {
 .header-logo {
   margin-right: 93px;
   font-family: Raleway;
-  font-weight: var(--primary-fontWeight);
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--logo-primary-color);
@@ -408,12 +408,12 @@ img {
 
 .hero {
   padding: 200px 0;
+  text-align: center;
   background-color: #2F303A;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  text-align: center;
 }
 
 .hero-title {
@@ -422,21 +422,21 @@ img {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  color: var(--third-text-color);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--third-text-color);
 }
 
 .hero-btn {
   padding: 10px 32px;
   margin-top: 30px;
-  font-weight: var(--primary-fontWeight);
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--third-text-color);
-  background-color: #2196F3;
+  background-color: var(--accent-color);
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -462,9 +462,9 @@ img {
 
 .skills-title {
   margin-bottom: 10px;
-  font-weight: var(--primary-fontWeight);
   font-size: 14px;
-  line-height: 1.1;
+  font-weight: var(--primary-fontWeight);
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
@@ -496,11 +496,11 @@ img {
 
 .whatWeDo-title {
   margin-bottom: 50px;
-  font-weight: var(--primary-fontWeight);
-  font-size: var(--title-text-size);
-  line-height: 1.2;
-  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--primary-text-color);
 }
 
@@ -540,9 +540,9 @@ img {
 .team-title {
   text-align: center;
   margin-bottom: 50px;
-  font-weight: var(--primary-fontWeight);
-  font-size: var(--title-text-size);
-  line-height: 1.2;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -614,11 +614,11 @@ img {
 }
 
 .clients-title {
-  font-weight: var(--primary-fontWeight);
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 50px;
   color: var(--primary-text-color);
 }
@@ -789,8 +789,8 @@ img {
   display: inline-block;
   margin-bottom: 20px;
   font-family: Raleway;
-  font-weight: var(--primary-fontWeight);
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--logo-primary-color);
@@ -817,7 +817,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: var(--third-text-color);
 }
 
 .footer-text {
@@ -860,13 +860,13 @@ img {
 }
 
 .subscribe-button {
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
   width: 200px;
   height: 50px;
-  font-weight: var(--primary-fontWeight);
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--third-text-color);

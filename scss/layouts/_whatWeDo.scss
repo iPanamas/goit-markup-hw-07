@@ -1,12 +1,9 @@
 .whatWeDo-title {
     margin-bottom: 50px;
 
-    font-weight: var(--primary-fontWeight);
-    font-size: var(--title-text-size);
-    line-height: 1.2;
+    @include font-section-title();
+    
     text-align: center;
-    letter-spacing: 0.03em;
-
     color: var(--primary-text-color);
 }
 
@@ -26,9 +23,7 @@
     position: absolute;
     bottom: 0;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex();
 
     width: 100%;
     height: 70px;

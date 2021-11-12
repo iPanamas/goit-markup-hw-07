@@ -21,11 +21,8 @@
 
 .header-logo {
     margin-right: 93px;
-    font-family: Raleway;
-    font-weight: var(--primary-fontWeight);
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
+
+    @include font-logo();
 
     color: var(--logo-primary-color);
 

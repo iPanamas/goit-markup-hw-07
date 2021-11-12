@@ -1,9 +1,6 @@
 .clients-title {
-    font-weight: var(--primary-fontWeight);
-    font-size: 36px;
-    line-height: 1.17;
+    @include font-section-title();
     text-align: center;
-    letter-spacing: 0.03em;
 
     margin-bottom: 50px;
 
@@ -19,9 +16,7 @@
 }
 
 .clients-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex();
 
     width: 170px;
     height: 92px;

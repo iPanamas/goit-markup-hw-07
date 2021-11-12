@@ -32,6 +32,10 @@
   margin: -1px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #ffffff;
   color: var(--primary-text-color);
@@ -340,6 +344,10 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.nav-link:focus, .nav-link:hover {
+  color: var(--accent-color);
+}
+
 .nav-link::after {
   position: absolute;
   bottom: 0;
@@ -356,16 +364,6 @@ img {
   opacity: 1;
 }
 
-.nav-link:focus,
-.nav-link:hover {
-  color: var(--accent-color);
-}
-
-.headerContact-link {
-  display: inline-flex;
-  align-items: center;
-}
-
 .header-contacts {
   display: flex;
   align-items: center;
@@ -376,6 +374,8 @@ img {
 }
 
 .headerContact-link {
+  display: inline-flex;
+  align-items: center;
   font-weight: var(--second-fontWeight);
   color: var(--second-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -383,6 +383,11 @@ img {
 
 .headerContact-link:focus, .headerContact-link:hover {
   color: var(--accent-color);
+}
+
+.headerContact-link:focus .icon-contact,
+.headerContact-link:hover .icon-contact {
+  fill: var(--accent-color);
 }
 
 .icon-contact {
@@ -399,11 +404,6 @@ img {
 .icon-phone {
   width: 10px;
   height: 16px;
-}
-
-.headerContact-link:focus .icon-contact,
-.headerContact-link:hover .icon-contact {
-  fill: var(--accent-color);
 }
 
 .hero {
@@ -821,13 +821,13 @@ img {
 }
 
 .footer-text {
+  margin-bottom: 20px;
   font-weight: var(--primary-fontWeight);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--third-text-color);
-  margin-bottom: 20px;
 }
 
 .footer-list {

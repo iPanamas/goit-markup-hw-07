@@ -60,7 +60,12 @@
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &::after{
+    &:focus,
+    &:hover {
+        color: var(--accent-color);
+    }
+
+    &::after {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -71,20 +76,10 @@
         background-color: var(--accent-color);
         opacity: 0;
     }
-}
 
-.nav-link.current::after {
-    opacity: 1;
-}
-
-.nav-link:focus,
-.nav-link:hover {
-    color: var(--accent-color);
-}
-
-.headerContact-link {
-    display: inline-flex;
-    align-items: center;
+    &.current::after {
+        opacity: 1;
+    }
 }
 
 .header-contacts {
@@ -97,12 +92,21 @@
 }
 
 .headerContact-link {
+    display: inline-flex;
+    align-items: center;
+
     font-weight: var(--second-fontWeight);
     color: var(--second-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:focus,
     &:hover {
         color: var(--accent-color);
+    }
+
+    &:focus .icon-contact,
+    &:hover .icon-contact {
+        fill: var(--accent-color);
     }
 }
 
@@ -120,9 +124,4 @@
 .icon-phone {
     width: 10px;
     height: 16px;
-}
-
-.headerContact-link:focus .icon-contact,
-.headerContact-link:hover .icon-contact {
-    fill: var(--accent-color);
 }

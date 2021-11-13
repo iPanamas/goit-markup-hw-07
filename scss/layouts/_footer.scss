@@ -3,13 +3,13 @@
     background-color: #2F303A;
 }
 
-.footer-container {
+.footer__container {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
 
-.footer-links {
+.footer__inner {
     flex-grow: 1;
     margin-right: 70px;
 }

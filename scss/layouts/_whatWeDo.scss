@@ -1,17 +1,8 @@
-.whatWeDo-title {
-    margin-bottom: 50px;
-
-    @include font-section-title();
-    
-    text-align: center;
-    color: var(--primary-text-color);
-}
-
-.whatWeDo-items {
+.whatWeDo__list {
     display: flex;
 }
 
-.whatWeDo-item {
+.whatWeDo__item {
     position: relative;
     
     &:not(:last-child){
@@ -19,7 +10,7 @@
     }
 }
 
-.whatWeDo-text {
+.whatWeDo__text {
     position: absolute;
     bottom: 0;
 

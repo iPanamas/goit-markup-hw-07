@@ -1,21 +1,12 @@
-.clients-title {
-    @include font-section-title();
-    text-align: center;
-
-    margin-bottom: 50px;
-
-    color: var(--primary-text-color);
-}
-
-.clients-items {
+.clients__list {
     display: flex;
 }
 
-.clients-item:not(:last-child) {
+.clients__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.clients-link {
+.clients__link {
     @include flex();
 
     width: 170px;
@@ -36,7 +27,7 @@
     }
 }
 
-.clients-icon {
+.clients__icon {
     width: 106px;
     height: 60px;
 

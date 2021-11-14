@@ -94,7 +94,40 @@ img {
   padding-top: 80px;
 }
 
-.social-icon {
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-list__item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list__link:focus, .social-list__link:hover {
+  background-color: var(--accent-color);
+}
+
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
+  fill: var(--accent-icon-color);
+}
+
+.social-list__icon {
   fill: var(--icon-color);
   width: 20px;
   height: 20px;
@@ -531,26 +564,16 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.team-background {
+.section--background {
   background-color: #F5F4FA;
 }
 
-.team-title {
-  text-align: center;
-  margin-bottom: 50px;
-  font-weight: var(--primary-fontWeight);
-  font-size: var(--title-text-size);
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
-
-.team-cards {
+.team__list {
   display: flex;
   justify-content: space-between;
 }
 
-.team-card {
+.team__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #FFFFFF;
@@ -560,7 +583,7 @@ img {
   padding: 30px 0;
 }
 
-.team-name {
+.team-info__name {
   text-align: center;
   margin-bottom: 10px;
   font-weight: var(--second-fontWeight);
@@ -569,46 +592,13 @@ img {
   letter-spacing: 0.03em;
 }
 
-.team-prof {
+.team-info__prof {
   margin-bottom: 16px;
   text-align: center;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-}
-
-.social-list {
-  display: flex;
-  justify-content: center;
-}
-
-.social-item {
-  width: 44px;
-  height: 44px;
-}
-
-.social-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-link:focus, .social-link:hover {
-  background-color: var(--accent-color);
-}
-
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
-  fill: var(--accent-icon-color);
 }
 
 .clients-title {

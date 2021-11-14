@@ -80,6 +80,16 @@ img {
   padding: 94px 0;
 }
 
+.section__title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: var(--primary-fontWeight);
+  font-size: var(--title-text-size);
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
 .main {
   padding-top: 80px;
 }
@@ -492,29 +502,19 @@ img {
   height: 70px;
 }
 
-.whatWeDo-title {
-  margin-bottom: 50px;
-  font-weight: var(--primary-fontWeight);
-  font-size: var(--title-text-size);
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
-
-.whatWeDo-items {
+.whatWeDo__list {
   display: flex;
 }
 
-.whatWeDo-item {
+.whatWeDo__item {
   position: relative;
 }
 
-.whatWeDo-item:not(:last-child) {
+.whatWeDo__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.whatWeDo-text {
+.whatWeDo__text {
   position: absolute;
   bottom: 0;
   display: flex;

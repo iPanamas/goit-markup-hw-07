@@ -17,22 +17,19 @@
 
 .header-nav {
     display: flex;
+    flex-basis: 40%;
 }
 
-.header-nav__logo {
-    margin-right: 93px;
-    font-family: Raleway;
-    font-weight: var(--primary-fontWeight);
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
+.header-logo {
+    @include font-logo();
 
     color: var(--logo-primary-color);
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    & span {
-        color: var(--logo-header-color)
-    }
+}
+
+.header-logo_dark {
+    color: var(--logo-header-color)
 }
 
 .header-nav__list {
@@ -46,7 +43,9 @@
 
 .header-nav__link {
     position: relative;
+
     padding: 32px 0;
+    
     color: var(--primary-text-color);
     font-weight: var(--second-fontWeight);
     font-size: 14px;
@@ -73,11 +72,11 @@
     }
 }
 
-.header-nav__link.current::after {
+.header-nav__link_current::after {
     opacity: 1;
 }
 
-.header-nav .header-nav__link.current {
+.header-nav .header-nav__link_current {
     color: var(--accent-color);
 }
 

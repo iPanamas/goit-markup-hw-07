@@ -767,11 +767,6 @@ img {
   align-items: baseline;
 }
 
-.footer__inner {
-  flex-grow: 1;
-  margin-right: 70px;
-}
-
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -823,10 +818,6 @@ img {
 
 .footer-link {
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.footer-social {
-  margin-right: 93px;
 }
 
 .footer-input {

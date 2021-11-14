@@ -301,7 +301,7 @@ img {
   display: flex;
 }
 
-.header-logo {
+.header-nav__logo {
   margin-right: 93px;
   font-family: Raleway;
   font-weight: var(--primary-fontWeight);
@@ -312,24 +312,20 @@ img {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.header-logo span {
+.header-nav__logo span {
   color: var(--logo-header-color);
 }
 
-.nav {
+.header-nav__list {
   display: flex;
   align-items: center;
 }
 
-.nav-list:not(:last-child) {
+.header-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav .nav-link.current {
-  color: var(--accent-color);
-}
-
-.nav-link {
+.header-nav__link {
   position: relative;
   padding: 32px 0;
   color: var(--primary-text-color);
@@ -340,7 +336,11 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link::after {
+.header-nav__link:focus, .header-nav__link:hover {
+  color: var(--accent-color);
+}
+
+.header-nav__link::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -352,40 +352,41 @@ img {
   opacity: 0;
 }
 
-.nav-link.current::after {
+.header-nav__link.current::after {
   opacity: 1;
 }
 
-.nav-link:focus,
-.nav-link:hover {
+.header-nav .header-nav__link.current {
   color: var(--accent-color);
 }
 
-.headerContact-link {
-  display: inline-flex;
-  align-items: center;
-}
-
-.header-contacts {
+.header-contact {
   display: flex;
   align-items: center;
 }
 
-.header-contact:not(:last-child) {
+.header-contact__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.headerContact-link {
+.header-contact__link {
+  display: inline-flex;
+  align-items: center;
   font-weight: var(--second-fontWeight);
   color: var(--second-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.headerContact-link:focus, .headerContact-link:hover {
+.header-contact__link:focus, .header-contact__link:hover {
   color: var(--accent-color);
 }
 
-.icon-contact {
+.header-contact__link:focus .header-contact__icon,
+.header-contact__link:hover .header-contact__icon {
+  fill: var(--accent-color);
+}
+
+.header-contact__icon {
   fill: var(--second-text-color);
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -399,11 +400,6 @@ img {
 .icon-phone {
   width: 10px;
   height: 16px;
-}
-
-.headerContact-link:focus .icon-contact,
-.headerContact-link:hover .icon-contact {
-  fill: var(--accent-color);
 }
 
 .hero {
@@ -774,7 +770,7 @@ img {
   background-color: #2F303A;
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -784,8 +780,8 @@ img {
   display: inline-block;
   margin-bottom: 20px;
   font-family: Raleway;
-  font-weight: var(--primary-fontWeight);
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--logo-primary-color);
@@ -812,17 +808,17 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: var(--third-text-color);
 }
 
 .footer-text {
+  margin-bottom: 20px;
   font-weight: var(--primary-fontWeight);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--third-text-color);
-  margin-bottom: 20px;
 }
 
 .footer-list {
@@ -851,13 +847,13 @@ img {
 }
 
 .subscribe-button {
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
   width: 200px;
   height: 50px;
-  font-weight: var(--primary-fontWeight);
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--third-text-color);

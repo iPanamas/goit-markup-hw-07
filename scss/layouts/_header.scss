@@ -19,7 +19,7 @@
     display: flex;
 }
 
-.header-logo {
+.header-nav__logo {
     margin-right: 93px;
     font-family: Raleway;
     font-weight: var(--primary-fontWeight);
@@ -30,26 +30,21 @@
     color: var(--logo-primary-color);
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    & span {
+        color: var(--logo-header-color)
+    }
 }
 
-.header-logo span {
-    color: var(--logo-header-color)
-}
-
-.nav {
+.header-nav__list {
     display: flex;
     align-items: center;
 }
 
-.nav-list:not(:last-child) {
+.header-nav__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.nav .nav-link.current {
-    color: var(--accent-color);
-}
-
-.nav-link {
+.header-nav__link {
     position: relative;
     padding: 32px 0;
     color: var(--primary-text-color);
@@ -60,7 +55,12 @@
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &::after{
+    &:focus,
+    &:hover {
+        color: var(--accent-color);
+    }
+
+    &::after {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -73,30 +73,27 @@
     }
 }
 
-.nav-link.current::after {
+.header-nav__link.current::after {
     opacity: 1;
 }
 
-.nav-link:focus,
-.nav-link:hover {
+.header-nav .header-nav__link.current {
     color: var(--accent-color);
 }
 
-.headerContact-link {
-    display: inline-flex;
-    align-items: center;
-}
-
-.header-contacts {
+.header-contact {
     display: flex;
     align-items: center;
 }
 
-.header-contact:not(:last-child) {
+.header-contact__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.headerContact-link {
+.header-contact__link {
+    display: inline-flex;
+    align-items: center;
+
     font-weight: var(--second-fontWeight);
     color: var(--second-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -104,9 +101,14 @@
     &:hover {
         color: var(--accent-color);
     }
+
+    &:focus .header-contact__icon,
+    &:hover .header-contact__icon {
+        fill: var(--accent-color);
+    }
 }
 
-.icon-contact {
+.header-contact__icon {
     fill: var(--second-text-color);
     margin-right: 10px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -122,7 +124,3 @@
     height: 16px;
 }
 
-.headerContact-link:focus .icon-contact,
-.headerContact-link:hover .icon-contact {
-    fill: var(--accent-color);
-}

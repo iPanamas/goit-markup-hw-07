@@ -12,6 +12,8 @@
   --logo-primary-color: #2196F3;
   --logo-header-color: #000000;
   --logo-footer-color: #FFFFFF;
+  /* bg-color */
+  --skills-bg-color: #F5F4FA;
   /* font-weight */
   --primary-fontWeight: 700;
   --second-fontWeight: 500;
@@ -448,15 +450,15 @@ img {
   padding-bottom: 0;
 }
 
-.skills-items {
+.skills__list {
   display: flex;
 }
 
-.skills-item:not(:last-child) {
+.skills__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.skills-title {
+.skills__title {
   margin-bottom: 10px;
   font-weight: var(--primary-fontWeight);
   font-size: 14px;
@@ -466,7 +468,7 @@ img {
   color: var(--primary-text-color);
 }
 
-.skills-text {
+.skills__text {
   width: 270px;
   font-size: 14px;
   line-height: 1.71;
@@ -474,18 +476,18 @@ img {
   color: var(--second-text-color);
 }
 
-.skills-icon {
+.skills__icon {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 270px;
   height: 120px;
-  background-color: #F5F4FA;
+  background-color: var(--skills-bg-color);
   border-radius: 4px;
   margin-bottom: 30px;
 }
 
-.skills-icon > svg {
+.skills__icon > svg {
   width: 70px;
   height: 70px;
 }

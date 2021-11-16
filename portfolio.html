@@ -20,7 +20,7 @@
 <body>
     <!-- header -->
     <header class="header">
-        <div class="container header-container">
+        <div class="container header__container">
             <a class="header-logo" href="./index.html">Web<span class="header-logo_dark">Studio</span></a>
             <nav class="header-nav">
                 <ul class="header-nav__list">
@@ -28,7 +28,7 @@
                         <a class="header-nav__link" href="./index.html">Студия</a>
                     </li>
                     <li class="header-nav__item">
-                        <a class="header-nav__link header-nav__link_current" href="">Портфолио</a>
+                        <a class="header-nav__link header-nav__link--current" href="">Портфолио</a>
                     </li>
                     <li class="header-nav__item">
                         <a class="header-nav__link" href="">Контакты</a>
@@ -38,14 +38,14 @@
             <ul class="header-contact">
                 <li class="header-contact__item">
                     <a class="header-contact__link" href="mailto:info@devstudio.com">
-                        <svg class="header-contact__icon icon-mail">
+                        <svg class="header-contact__icon icon-mail" width="16" height="12">
                             <use href="./img/icons/sprite/sprite.svg#icon-mail"></use>
                         </svg>
                         info@devstudio.com</a>
                 </li>
                 <li class="header-contact__item">
                     <a class="header-contact__link" href="tel:+380961111111">
-                        <svg class="header-contact__icon icon-phone">
+                        <svg class="header-contact__icon icon-phone" width="10" height="16">
                             <use href="./img/icons/sprite/sprite.svg#icon-phone"></use>
                         </svg>
                         +38 096 111 11 11</a>
@@ -70,8 +70,8 @@
                         <a href="" class="portfolio__link">
                             <div class="portfolio__thumb">
                                 <img src="./img/portfolio/portfolio-1.jpg" alt="" width="370" height="294">
-                                <div class="portfolio-overlay">
-                                    <p class="portfolio-overlay__text">Технокряк это современная площадка
+                                <div class="portfolio__overlay">
+                                    <p class="portfolio__overlay-text">Технокряк это современная площадка
                                         распространения
                                         коронавируса.
                                         Компании используют
@@ -79,9 +79,9 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="portfolio-info">
-                                <h2 class="portfolio-info__title">Технокряк</h2>
-                                <p class="portfolio-info__text">Веб-сайт</p>
+                            <div class="portfolio__box">
+                                <h2 class="portfolio__title">Технокряк</h2>
+                                <p class="portfolio__text">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
@@ -89,8 +89,8 @@
                         <a href="" class="portfolio__link">
                             <div class="portfolio__thumb">
                                 <img src="./img/portfolio/portfolio-2.jpg" alt="" width="370" height="294">
-                                <div class="portfolio-overlay">
-                                    <p class="portfolio-overlay__text">Технокряк это современная площадка
+                                <div class="portfolio__overlay">
+                                    <p class="portfolio__overlay-text">Технокряк это современная площадка
                                         распространения
                                         коронавируса.
                                         Компании используют
@@ -98,9 +98,9 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="portfolio-info">
-                                <h2 class="portfolio-info__title">Постер New Orlean vs Golden Star</h2>
-                                <p class="portfolio-info__text">Дизайн</p>
+                            <div class="portfolio__box">
+                                <h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
+                                <p class="portfolio__text">Дизайн</p>
                             </div>
                         </a>
                     </li>
@@ -108,8 +108,8 @@
                         <a href="" class="portfolio__link">
                             <div class="portfolio__thumb">
                                 <img src="./img/portfolio/portfolio-3.jpg" alt="" width="370" height="294">
-                                <div class="portfolio-overlay">
-                                    <p class="portfolio-overlay__text">Технокряк это современная площадка
+                                <div class="portfolio__overlay">
+                                    <p class="portfolio__overlay-text">Технокряк это современная площадка
                                         распространения
                                         коронавируса.
                                         Компании используют
@@ -117,9 +117,9 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="portfolio-info">
-                                <h2 class="portfolio-info__title">Ресторан Seafood</h2>
-                                <p class="portfolio-info__text">Приложение</p>
+                            <div class="portfolio__box">
+                                <h2 class="portfolio__title">Ресторан Seafood</h2>
+                                <p class="portfolio__text">Приложение</p>
                             </div>
                         </a>
                     </li>
@@ -127,8 +127,8 @@
                         <a href="" class="portfolio__link">
                             <div class="portfolio__thumb">
                                 <img src="./img/portfolio/portfolio-4.jpg" alt="" width="370" height="294">
-                                <div class="portfolio-overlay">
-                                    <p class="portfolio-overlay__text">Технокряк это современная площадка
+                                <div class="portfolio__overlay">
+                                    <p class="portfolio__overlay-text">Технокряк это современная площадка
                                         распространения
                                         коронавируса.
                                         Компании используют
@@ -136,9 +136,9 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="portfolio-info">
-                                <h2 class="portfolio-info__title">Проект Prime</h2>
-                                <p class="portfolio-info__text">Маркетинг</p>
+                            <div class="portfolio__box">
+                                <h2 class="portfolio__title">Проект Prime</h2>
+                                <p class="portfolio__text">Маркетинг</p>
                             </div>
                         </a>
                     </li>
@@ -146,8 +146,8 @@
                         <a href="" class="portfolio__link">
                             <div class="portfolio__thumb">
                                 <img src="./img/portfolio/portfolio-5.jpg" alt="" width="370" height="294">
-                                <div class="portfolio-overlay">
-                                    <p class="portfolio-overlay__text">Технокряк это современная площадка
+                                <div class="portfolio__overlay">
+                                    <p class="portfolio__overlay-text">Технокряк это современная площадка
                                         распространения
                                         коронавируса.
                                         Компании используют
@@ -155,9 +155,9 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="portfolio-info">
-                                <h2 class="portfolio-info__title">Проект Boxes</h2>
-                                <p class="portfolio-info__text">Приложение</p>
+                            <div class="portfolio__box">
+                                <h2 class="portfolio__title">Проект Boxes</h2>
+                                <p class="portfolio__text">Приложение</p>
                             </div>
                         </a>
                     </li>
@@ -165,8 +165,8 @@
                         <a href="" class="portfolio__link">
                             <div class="portfolio__thumb">
                                 <img src="./img/portfolio/portfolio-6.jpg" alt="" width="370" height="294">
-                                <div class="portfolio-overlay">
-                                    <p class="portfolio-overlay__text">Технокряк это современная площадка
+                                <div class="portfolio__overlay">
+                                    <p class="portfolio__overlay-text">Технокряк это современная площадка
                                         распространения
                                         коронавируса.
                                         Компании используют
@@ -174,9 +174,9 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="portfolio-info">
-                                <h2 class="portfolio-info__title">Inspiration has no Borders</h2>
-                                <p class="portfolio-info__text">Веб-сайт</p>
+                            <div class="portfolio__box">
+                                <h2 class="portfolio__title">Inspiration has no Borders</h2>
+                                <p class="portfolio__text">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
@@ -184,8 +184,8 @@
                         <a href="" class="portfolio__link">
                             <div class="portfolio__thumb">
                                 <img src="./img/portfolio/portfolio-7.jpg" alt="" width="370" height="294">
-                                <div class="portfolio-overlay">
-                                    <p class="portfolio-overlay__text">Технокряк это современная площадка
+                                <div class="portfolio__overlay">
+                                    <p class="portfolio__overlay-text">Технокряк это современная площадка
                                         распространения
                                         коронавируса.
                                         Компании используют
@@ -193,9 +193,9 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="portfolio-info">
-                                <h2 class="portfolio-info__title">Издание Limited Edition</h2>
-                                <p class="portfolio-info__text">Дизайн</p>
+                            <div class="portfolio__box">
+                                <h2 class="portfolio__title">Издание Limited Edition</h2>
+                                <p class="portfolio__text">Дизайн</p>
                             </div>
                         </a>
                     </li>
@@ -203,8 +203,8 @@
                         <a href="" class="portfolio__link">
                             <div class="portfolio__thumb">
                                 <img src="./img/portfolio/portfolio-8.jpg" alt="" width="370" height="294">
-                                <div class="portfolio-overlay">
-                                    <p class="portfolio-overlay__text">Технокряк это современная площадка
+                                <div class="portfolio__overlay">
+                                    <p class="portfolio__overlay-text">Технокряк это современная площадка
                                         распространения
                                         коронавируса.
                                         Компании используют
@@ -212,9 +212,9 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="portfolio-info">
-                                <h2 class="portfolio-info__title">Проект LAB</h2>
-                                <p class="portfolio-info__text">Маркетинг</p>
+                            <div class="portfolio__box">
+                                <h2 class="portfolio__title">Проект LAB</h2>
+                                <p class="portfolio__text">Маркетинг</p>
                             </div>
                         </a>
                     </li>
@@ -222,8 +222,8 @@
                         <a href="" class="portfolio__link">
                             <div class="portfolio__thumb">
                                 <img src="./img/portfolio/portfolio-9.jpg" alt="" width="370" height="294">
-                                <div class="portfolio-overlay">
-                                    <p class="portfolio-overlay__text">Технокряк это современная площадка
+                                <div class="portfolio__overlay">
+                                    <p class="portfolio__overlay-text">Технокряк это современная площадка
                                         распространения
                                         коронавируса.
                                         Компании используют
@@ -231,9 +231,9 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="portfolio-info">
-                                <h2 class="portfolio-info__title">Growing Business</h2>
-                                <p class="portfolio-info__text">Приложение</p>
+                            <div class="portfolio__box">
+                                <h2 class="portfolio__title">Growing Business</h2>
+                                <p class="portfolio__text">Приложение</p>
                             </div>
                         </a>
                     </li>
@@ -245,7 +245,7 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-info">
-                <a class="footer-info__logo" href="#">Web<span class="footer-info__logo_white">Studio</span></a>
+                <a class="footer-info__logo" href="#">Web<span class="footer-info__logo--white">Studio</span></a>
                 <address class="footer-address">
                     <ul class="footer-address__list">
                         <li class="footer-address__item">
@@ -266,29 +266,29 @@
                 <p class="footer-text">Присоеденяйтесь</p>
                 <ul class="social">
                     <li class="social__item">
-                        <a class="social__link social__link_background-gray" href="">
-                            <svg class="social__icon social__icon_white">
+                        <a class="social__link social__link--background-gray" href="">
+                            <svg class="social__icon social__icon--white">
                                 <use href="./img/icons/sprite/sprite.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link_background-gray" href="">
-                            <svg class="social__icon social__icon_white">
+                        <a class="social__link social__link--background-gray" href="">
+                            <svg class="social__icon social__icon--white">
                                 <use href="./img/icons/sprite/sprite.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link_background-gray" href="">
-                            <svg class="social__icon social__icon_white">
+                        <a class="social__link social__link--background-gray" href="">
+                            <svg class="social__icon social__icon--white">
                                 <use href="./img/icons/sprite/sprite.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link_background-gray" href="">
-                            <svg class="social__icon social__icon_white">
+                        <a class="social__link social__link--background-gray" href="">
+                            <svg class="social__icon social__icon--white">
                                 <use href="./img/icons/sprite/sprite.svg#icon-linkedin"></use>
                             </svg>
                         </a>

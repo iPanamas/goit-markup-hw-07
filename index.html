@@ -20,12 +20,12 @@
 <body>
     <!-- header -->
     <header class="header">
-        <div class="container header-container">
+        <div class="container header__container">
             <a class="header-logo" href="./index.html">Web<span class="header-logo_dark">Studio</span></a>
             <nav class="header-nav">
                 <ul class="header-nav__list">
                     <li class="header-nav__item">
-                        <a class="header-nav__link header-nav__link_current" href="">Студия</a>
+                        <a class="header-nav__link header-nav__link--current" href="">Студия</a>
                     </li>
                     <li class="header-nav__item">
                         <a class="header-nav__link" href="./portfolio.html">Портфолио</a>
@@ -38,14 +38,14 @@
             <ul class="header-contact">
                 <li class="header-contact__item">
                     <a class="header-contact__link" href="mailto:info@devstudio.com">
-                        <svg class="header-contact__icon icon-mail">
+                        <svg class="header-contact__icon" width="16" height="12">
                             <use href="./img/icons/sprite/sprite.svg#icon-mail"></use>
                         </svg>
                         info@devstudio.com</a>
                 </li>
                 <li class="header-contact__item">
                     <a class="header-contact__link" href="tel:+380961111111">
-                        <svg class="header-contact__icon icon-phone">
+                        <svg class="header-contact__icon icon-phone" width="10" height="16">
                             <use href="./img/icons/sprite/sprite.svg#icon-phone"></use>
                         </svg>
                         +38 096 111 11 11</a>
@@ -65,7 +65,7 @@
         <section class="section section--padding">
             <div class="container">
                 <h2 class="visually-hidden">Наши преимущества</h2>
-                <ul class="skills__list">
+                <ul class="skills">
                     <li class="skills__item">
                         <div class="skills__icon">
                             <svg>
@@ -114,7 +114,7 @@
         <section class="section">
             <div class="container">
                 <h2 class="section__title">Чем мы занимаемся</h2>
-                <ul class="whatWeDo__list">
+                <ul class="whatWeDo">
                     <li class="whatWeDo__item">
                         <img class="whatWeDo__image" src="./img/whatWeDo/whatWeDo_1.jpg" alt="" width="370"
                             height="294">
@@ -134,16 +134,16 @@
             </div> <!-- container -->
         </section> <!-- section -->
         <!-- team -->
-        <section class="section section--background">
+        <section class="section section__background">
             <div class="container">
                 <h2 class="section__title">Наша команда</h2>
-                <ul class="team__list">
+                <ul class="team">
                     <li class="team__item">
-                        <img class="team__photo" src="./img/Team/teammate_1.jpg" alt="teammate-1" width="270"
+                        <img class="team__photo" src="./img/team/teammate_1.jpg" alt="teammate-1" width="270"
                             height="260">
                         <div class="team-info">
-                            <h3 class="team-info__name">Игорь Демьяненко</h3>
-                            <p class="team-info__prof" lang="en">Product Designer</p>
+                            <h3 class="team-info__title">Игорь Демьяненко</h3>
+                            <p class="team-info__text" lang="en">Product Designer</p>
                             <ul class="social">
                                 <li class="social__item">
                                     <a class="social__link" href="">
@@ -177,11 +177,11 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__photo" src="./img/Team/teammate_2.jpg" alt="teammate-2" width="270"
+                        <img class="team__photo" src="./img/team/teammate_2.jpg" alt="teammate-2" width="270"
                             height="260">
                         <div class="team-info">
-                            <h3 class="team-info__name">Ольга Репина</h3>
-                            <p class="team-info__prof" lang="en">Frontend Developer</p>
+                            <h3 class="team-info__title">Ольга Репина</h3>
+                            <p class="team-info__text" lang="en">Frontend Developer</p>
                             <ul class="social">
                                 <li class="social__item">
                                     <a class="social__link" href="">
@@ -215,11 +215,11 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__photo" src="./img/Team/teammate_3.jpg" alt="teammate-3" width="270"
+                        <img class="team__photo" src="./img/team/teammate_3.jpg" alt="teammate-3" width="270"
                             height="260">
                         <div class="team-info">
-                            <h3 class="team-info__name">Николай Тарасов</h3>
-                            <p class="team-info__prof" lang="en">Marketing</p>
+                            <h3 class="team-info__title">Николай Тарасов</h3>
+                            <p class="team-info__text" lang="en">Marketing</p>
                             <ul class="social">
                                 <li class="social__item">
                                     <a class="social__link" href="">
@@ -253,11 +253,11 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__photo" src="./img/Team/teammate_4.jpg" alt="teammate-4" width="270"
+                        <img class="team__photo" src="./img/team/teammate_4.jpg" alt="teammate-4" width="270"
                             height="260">
                         <div class="team-info">
-                            <h3 class="team-info__name">Михаил Ермаков</h3>
-                            <p class="team-info__prof" lang="en">UI Designer</p>
+                            <h3 class="team-info__title">Михаил Ермаков</h3>
+                            <p class="team-info__text" lang="en">UI Designer</p>
                             <ul class="social">
                                 <li class="social__item">
                                     <a class="social__link" href="">
@@ -296,7 +296,7 @@
         <section class="section">
             <div class="container">
                 <h2 class="section__title">Постоянные клиенты</h2>
-                <ul class="clients-list">
+                <ul class="clients">
                     <li class="clients-list__item">
                         <a class="clients-list__link" href="">
                             <svg class="clients-list__icon">
@@ -347,7 +347,7 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-info">
-                <a class="footer-info__logo" href="#">Web<span class="footer-info__logo_white">Studio</span></a>
+                <a class="footer-info__logo" href="#">Web<span class="footer-info__logo--white">Studio</span></a>
                 <address class="footer-address">
                     <ul class="footer-address__list">
                         <li class="footer-address__item">
@@ -368,29 +368,29 @@
                 <p class="footer-text">Присоеденяйтесь</p>
                 <ul class="social">
                     <li class="social__item">
-                        <a class="social__link social__link_background-gray" href="">
-                            <svg class="social__icon social__icon_white">
+                        <a class="social__link social__link--background-gray" href="">
+                            <svg class="social__icon social__icon--white">
                                 <use href="./img/icons/sprite/sprite.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link_background-gray" href="">
-                            <svg class="social__icon social__icon_white">
+                        <a class="social__link social__link--background-gray" href="">
+                            <svg class="social__icon social__icon--white">
                                 <use href="./img/icons/sprite/sprite.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link_background-gray" href="">
-                            <svg class="social__icon social__icon_white">
+                        <a class="social__link social__link--background-gray" href="">
+                            <svg class="social__icon social__icon--white">
                                 <use href="./img/icons/sprite/sprite.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link_background-gray" href="">
-                            <svg class="social__icon social__icon_white">
+                        <a class="social__link social__link--background-gray" href="">
+                            <svg class="social__icon social__icon--white">
                                 <use href="./img/icons/sprite/sprite.svg#icon-linkedin"></use>
                             </svg>
                         </a>

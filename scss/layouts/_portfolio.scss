@@ -71,8 +71,8 @@
         1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 
-    &:focus .portfolio-overlay,
-    &:hover .portfolio-overlay {
+    &:focus .portfolio__overlay,
+    &:hover .portfolio__overlay {
         transform: translateY(0);
     }
 }
@@ -82,7 +82,7 @@
     overflow: hidden;
 }
 
-.portfolio-overlay {
+.portfolio__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -94,7 +94,7 @@
     transform: translateY(100%);
 }
 
-.portfolio-overlay__text {
+.portfolio__overlay-text {
     position: absolute;
     padding: 63px 24px;
 
@@ -105,11 +105,11 @@
     color: var(--third-text-color);
 }
 
-.portfolio-info {
+.portfolio__box {
     padding: 20px 24px;
 }
 
-.portfolio-info__title {
+.portfolio__title {
     margin-bottom: 4px;
     
     font-weight: var(--primary-fontWeight);
@@ -120,7 +120,7 @@
     color: var(--primary-text-color);
 }
 
-.portfolio-info__text {
+.portfolio__text {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;

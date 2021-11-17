@@ -34,7 +34,7 @@
   margin: -1px;
 }
 
-.modal-policy, .skills__icon, .whatWeDo__text, .clients-list__link, .subscribe-button {
+.modal-policy, .skills__box, .whatWeDo__text, .clients-list__link, .subscribe-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -541,14 +541,14 @@ a {
   color: var(--second-text-color);
 }
 
-.skills__icon {
+.skills__box {
   height: 120px;
   background-color: var(--skills-bg-color);
   border-radius: 4px;
   margin-bottom: 30px;
 }
 
-.skills__icon > svg {
+.skills__icon {
   width: 70px;
   height: 70px;
 }

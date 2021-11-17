@@ -40,6 +40,9 @@
 .portfolio {
     display: flex;
     flex-wrap: wrap;
+
+    margin-right: -30px;
+    margin-bottom: -30px;
 }
 
 .portfolio__item {
@@ -52,12 +55,12 @@
     background-color: #FFFFFF;
     border: 1px solid #EEEEEE;
 
-    &:nth-child(3n + 3) {
-        margin-right: 0;
-    }
-    &:nth-child(n + 7) {
-        margin-bottom: 0;
-    }
+    // &:nth-child(3n + 3) {
+    //     margin-right: 0;
+    // }
+    // &:nth-child(n + 7) {
+    //     margin-bottom: 0;
+    // }
 }
 
 .portfolio__link {

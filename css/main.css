@@ -34,6 +34,34 @@
   margin: -1px;
 }
 
+.modal-policy, .skills__icon, .whatWeDo__text, .clients-list__link, .subscribe-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo, .footer-info__logo {
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.modal-button, .hero__button, .subscribe-button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.filter__button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+
 body {
   background-color: #ffffff;
   color: var(--primary-text-color);
@@ -282,9 +310,6 @@ a {
 }
 
 .modal-policy {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -327,10 +352,6 @@ a {
   margin-left: auto;
   width: 200px;
   height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
   color: var(--third-text-color);
   background-color: var(--accent-color);
   border: transparent;
@@ -365,11 +386,6 @@ a {
 }
 
 .header-logo {
-  font-family: Raleway;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
   color: var(--logo-primary-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -479,10 +495,6 @@ a {
 .hero__button {
   padding: 10px 32px;
   margin-top: 30px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
   color: var(--third-text-color);
   background-color: var(--accent-color);
   border: none;
@@ -530,9 +542,6 @@ a {
 }
 
 .skills__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 120px;
   background-color: var(--skills-bg-color);
   border-radius: 4px;
@@ -559,9 +568,6 @@ a {
 .whatWeDo__text {
   position: absolute;
   bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 70px;
   font-weight: var(--primary-fontWeight);
@@ -619,9 +625,6 @@ a {
 }
 
 .clients-list__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 170px;
   height: 92px;
   border: 1px solid var(--icon-color);
@@ -657,10 +660,6 @@ a {
 
 .filter__button {
   padding: 6px 22px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
   text-align: center;
   color: var(--primary-text-color);
   background-color: #F5F4FA;
@@ -762,11 +761,6 @@ a {
 }
 
 .footer-info__logo {
-  font-family: Raleway;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
   display: inline-block;
   margin-bottom: 20px;
   color: var(--logo-primary-color);
@@ -831,15 +825,8 @@ a {
 }
 
 .subscribe-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 200px;
   height: 50px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
   color: var(--third-text-color);
   background-color: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

@@ -3,10 +3,16 @@
 
     font-weight: var(--primary-fontWeight);
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
+    // line-height: 1.15;
     letter-spacing: 0.03em;
+    text-align: center;
 
     color: var(--primary-text-color);
+    
+    @media screen and (min-width: 1200px) {
+        line-height: 1.15;
+    }
 }
 
 .modal-form {
@@ -74,7 +80,6 @@
 }
 
 .modal-form__textarea {
-    width: 448px;
     height: 120px;
     padding: 12px 16px;
 
@@ -103,14 +108,19 @@
     display: flex;
     align-items: center;
 
-
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
 
     color: var(--second-text-color);
 
     cursor: pointer;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
 }
 
 .policy-link {

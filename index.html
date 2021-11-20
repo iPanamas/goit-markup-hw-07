@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <title>goit-markup-hw-07</title>
+    <title>goit-markup-hw-08</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -51,7 +51,53 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
-        </div> <!-- container -->
+            <button class="mobile-button" type="button" data-menu-open>
+                <svg class="mobile-button__icon" width="40" height="40">
+                    <use href="./img/icons/sprite/sprite.svg#icon-burger"></use>
+                </svg>
+            </button>
+            <!-- mobile-menu -->
+            <div class="mobile" data-menu>
+                <ul class="mobile-menu">
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="">Студия</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="mobile-contact">
+                    <li class="mobile-contact__item">
+                        <a class="mobile-contact__link mobile-contact__link--big" href="tel:+380961111111">+38 096 111
+                            11 11</a>
+                    </li>
+                    <li class="mobile-contact__item">
+                        <a class="mobile-contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-social">
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="">Instagram</a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="">Twitter</a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="">Facebook</a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="">LinkedIn</a>
+                    </li>
+                </ul>
+                <button class="mobile-button-close" type="button" data-menu-close>
+                    <svg class="mobile-button-close__icon" width="40" height="40">
+                        <use href="./img/icons/sprite/sprite.svg#icon-mobile-close"></use>
+                    </svg>
+                </button>
+            </div><!-- mobile-menu -->
         </div> <!-- container -->
     </header> <!-- header -->
     <main class="main">
@@ -111,7 +157,7 @@
             </div> <!-- container -->
         </section> <!-- skills -->
         <!-- whatWeDo -->
-        <section class="section">
+        <section class="section section--display-none">
             <div class="container">
                 <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="whatWeDo">
@@ -366,7 +412,7 @@
             </div>
             <div class="connect">
                 <p class="footer-text">Присоеденяйтесь</p>
-                <ul class="social">
+                <ul class="social social--margin">
                     <li class="social__item">
                         <a class="social__link social__link--background-gray" href="">
                             <svg class="social__icon social__icon--white">
@@ -463,6 +509,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

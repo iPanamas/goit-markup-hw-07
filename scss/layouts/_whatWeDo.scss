@@ -1,4 +1,10 @@
 
+.section--display-none{
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
 .whatWeDo {
     display: flex;
 }
